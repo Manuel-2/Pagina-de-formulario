@@ -17,7 +17,7 @@
             <form action="" id="survey-form">
 
                 <label for="name" id="name-label">Name</label>
-                <input type="text" placeholder="Enter your name" id="name" name="name">
+                <input type="text" placeholder="Enter your name" id="name" name="name" required>
 
                 <label for="email" id="email-label">Email</label>
                 <input type="email" placeholder="Enter your email" id="email" name="email" required>
@@ -33,13 +33,13 @@
                 </select>
 
                 <label for="option01">
-                    <input id="option01" value="option01" type="radio" name="option01">option01
+                    <input id="option01" value="option01" type="radio" name="option">option01
                 </label>
                 <label for="option02">
-                    <input id="option02" value="option02" type="radio" name="option02">option02
+                    <input id="option02" value="option02" type="radio" name="option">option02
                 </label>
                 <label for="option03">
-                    <input id="option03" value="option03" type="radio" name="option03">option03
+                    <input id="option03" value="option03" type="radio" name="option">option03
                 </label>
 
                 <label for="checkbox">
@@ -47,11 +47,11 @@
                 </label>
 
                 <label for="checkbox02">
-                    <input id="checkbox02" value="checkbox02" type="checkbox02" name="checkbox02">checkbox02
+                    <input id="checkbox02" value="checkbox02" type="checkbox" name="checkbox02">checkbox02
                 </label>
 
                 <p>Any comments or suggestions?</p>
-                <input type="text">
+                <textarea name="suggestions" id="sug" cols="30" rows="10"></textarea>
 
                 <button type="submit" id="submit">submit the form</button>
             </form>
