@@ -10,50 +10,75 @@
 </head>
 
 <body>
-    <main>
+    <main class="main-section">
         <div class="form-card">
-            <h1 id="title">title</h1>
-            <p id="description">description</p>
+            <div class="form-header">
+                <h1 id="title" class="element">Survey Form</h1>
+                <p id="description" class="element">Thank you for taking the time to help us improve the platform</p>
+            </div>
+
+
             <form action="" id="survey-form">
 
-                <label for="name" id="name-label">Name</label>
-                <input type="text" placeholder="Enter your name" id="name" name="name" required>
+                <div class="element">
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" placeholder="Enter your name" id="name" name="name" required class="input-box">
+                </div>
 
-                <label for="email" id="email-label">Email</label>
-                <input type="email" placeholder="Enter your email" id="email" name="email" required>
+                <div class="element">
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" placeholder="Enter your email" id="email" name="email" required class="input-box">
+                </div>
 
-                <label for="age" id="number-label">Age <span>(optional)</span></label>
-                <input type="number" id="number" min="16" max="100" name="age" placeholder="Enter your age">
+                <div class="element">
+                    <label for="age" id="number-label">Age <span>(optional)</span></label>
+                    <input type="number" id="number" min="16" max="100" name="age" placeholder="Enter your age" class="input-box">
+                </div>
 
-                <p>Which option best describes your current role?</p>
-                <select name="role" id="dropdown">
-                    <option value="Studednt">Student</option>
-                    <option value="Teacher">Teacher</option>
-                    <option value="Admin">Admin</option>
-                </select>
+                <div class="element">
+                    <p>Which option best describes your current role?</p>
+                    <select name="role" id="dropdown" class="input-box">
+                        <option value="Studednt">Student</option>
+                        <option value="Teacher">Teacher</option>
+                        <option value="Admin">Admin</option>
+                    </select>
+                </div>
 
-                <label for="option01">
-                    <input id="option01" value="option01" type="radio" name="option">option01
-                </label>
-                <label for="option02">
-                    <input id="option02" value="option02" type="radio" name="option">option02
-                </label>
-                <label for="option03">
-                    <input id="option03" value="option03" type="radio" name="option">option03
-                </label>
+                <div class="element">
+                    <p>Select an option</p>
+                    <label for="option01">
+                        <input id="option01" value="option01" type="radio" name="option" class="radio-button">option01
+                    </label>
 
-                <label for="checkbox">
-                    <input id="checkbox" value="checkbox" type="checkbox" name="checkbox">checkbox01
-                </label>
+                    <label for="option02">
+                     <input id="option02" value="option02" type="radio" name="option" class="radio-button">option02
+                    </label>
 
-                <label for="checkbox02">
-                    <input id="checkbox02" value="checkbox02" type="checkbox" name="checkbox02">checkbox02
-                </label>
+                    <label for="option03">
+                      <input id="option03" value="option03" type="radio" name="option" class="radio-button">option03
+                    </label>
+                </div>
 
-                <p>Any comments or suggestions?</p>
-                <textarea name="suggestions" id="sug" cols="30" rows="10"></textarea>
+                <div class="element">
+                    <p>Multiple option</p>
+                    <label for="checkbox">
+                        <input id="checkbox" value="checkbox" type="checkbox" name="checkbox" class="radio-button">checkbox01
+                    </label>
 
-                <button type="submit" id="submit">submit the form</button>
+                    <label for="checkbox02">
+                        <input id="checkbox02" value="checkbox02" type="checkbox" name="checkbox02" class="radio-button">checkbox02
+                    </label>
+                </div>
+
+                <div class="element">
+                    <p>Any comments or suggestions?</p>
+                    <textarea name="suggestions" id="sug" cols="30" rows="10" class="input-box"></textarea>
+                </div>
+
+                <div class="element">
+                    <button type="submit" id="submit">submit the form</button>
+                </div>
+
             </form>
         </div>
     </main>
