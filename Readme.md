@@ -1,1 +1,1 @@
-Proyecto numero 02 para la certificaion de responsive desing de FreeCodeCamp, formulario
+Proyecto numero 02 para la certificación de responsive desing de FreeCodeCamp, formulario
